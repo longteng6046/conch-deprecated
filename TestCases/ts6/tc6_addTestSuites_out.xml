@@ -1,0 +1,64 @@
+<results>
+	<success>
+		<command name="initRepository" />
+		<parameters />
+		<output />
+	</success>
+	<success>
+		<command name="addVendor" />
+		<parameters>
+			<name value="Peter" />
+			<note value="Sale" />
+			<web value="google" />
+		</parameters>
+		<output />
+	</success>
+	<success>
+		<command name ="addCategory" />
+		<parameters>
+			<name value="electric"/>
+  			<note value="cell phone"/>
+		</parameters>
+		<output/>
+	</success>
+	<success>
+		<command name="addMeta" />
+		<parameters>
+			<name value="C1" />
+			<vendor value="Peter" />
+			<category value="electric" />
+			<constraints value="n1;;n2;;n3" />
+		</parameters>
+		<output />
+	</success>
+	<success>
+		<command name="addTestSuite" />
+		<parameters>
+			<suiteName value="t1"/>
+			<componentName value="C1"/>
+		</parameters>
+		<output/>	
+	</success>
+	<success>
+		<command name="addTestSuite" />
+		<parameters>
+			<suiteName value="t2"/>
+			<componentName value="C1"/>
+		</parameters>
+		<output/>	
+	</success>
+	<failure type="ComponentNotExist">
+		<command name="addTestSuite" />
+		<parameters>
+			<suiteName value="t3"/>
+			<componentName value="C2"/>
+		</parameters>	
+	</failure>
+	<failure type="TestSuiteExists">
+		<command name="addTestSuite" />
+		<parameters>
+			<suiteName value="t2"/>
+			<componentName value="C1"/>
+		</parameters>	
+	</failure>
+</results>

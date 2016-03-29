@@ -1,0 +1,94 @@
+<command>
+	<initRepository>
+    </initRepository>
+    <addVendor>	
+	  	<name>Peter</name>
+  		<note>Sale</note>
+  		<website>google</website>
+	</addVendor>
+	
+	<addVendor>	
+	  	<name>Peter</name>
+  		<note>hello</note>
+  		<website>google</website>
+	</addVendor>
+	
+	<addCategory>
+		<name>electric</name>
+  		<note>cell phone</note>
+	</addCategory>
+	
+	<addCategory>
+		<name>electric</name>
+  		<note>TV</note>
+	</addCategory>
+	
+	<addCategory>
+		<name>food</name>
+  		<note>ice</note>
+	</addCategory>
+	
+	<addComp>	
+	  	<name>C1</name>
+  		<vendor>Peter</vendor>
+  		<category>electric</category>
+  		<constraints>
+  			<cons1>n1</cons1>
+  		 	<cons2>n2</cons2>
+  		 	<cons3>n3</cons3>
+  		</constraints>
+	</addComp>
+	
+	<addComp>	
+	  	<name>Com2</name>
+  		<vendor>Peter</vendor>
+  		<category>electric</category>
+  		<constraints>
+  			<cons1>m1</cons1>
+  		 	<cons2>m2</cons2>
+  		 	<cons3>m3</cons3>
+  		</constraints>
+	</addComp>
+	
+	<addComp>	
+	  	<name>Com3</name>
+  		<vendor>Peter</vendor>
+  		<category>food</category>
+  		<constraints>
+  			<cons1>t1</cons1>
+  		 	<cons2>t2</cons2>
+  		</constraints>
+	</addComp>
+	
+	<addComp>	
+	  	<name>Com4</name>
+  		<vendor>Peter</vendor>
+  		<category>food</category>
+  		<constraints>
+  			<cons1>t1</cons1>
+  		 	<cons2>t2</cons2>
+  		</constraints>
+	</addComp>
+	<addDeptInstance>
+		<name>C1</name>
+		<depended>Com2</depended>
+		<depended>Com3</depended>
+		<depended>Com4</depended>
+	</addDeptInstance>
+	
+	<addDeptInstance>
+		<name>F1</name>
+		<depended>Com2</depended>
+		<depended>Com3</depended>
+		<depended>Com4</depended>
+	</addDeptInstance>
+ 	
+ 	<getCDG>
+ 		<name>C1</name>
+ 	</getCDG>
+ 	
+ 	<getCDG>
+ 		<name>F1</name>
+ 	</getCDG>
+
+</command> 	

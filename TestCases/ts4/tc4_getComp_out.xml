@@ -1,0 +1,57 @@
+<results>
+	<success>
+		<command name="getVendor" />
+		<parameters>
+			<name value="Peter" />
+		</parameters>
+		<output>
+			<name>Peter</name>
+			<note>Sale</note>
+			<website>google</website>
+		</output>
+	</success>	
+	<failure type="VendorNotExist">
+		<command name="getVendor"/>
+		<parameters>
+			<name value="Sam" />
+		</parameters>
+	</failure>
+	<success>
+		<command name="getCategory" />
+		<parameters>
+			<name value="electric" />
+		</parameters>
+		<output>
+			<name>electric</name>
+			<note>cell phone</note>
+		</output>
+	</success>	
+	<failure type="CategoryNotExist">
+		<command name="getCategory"/>
+		<parameters>
+			<name value="food" />
+		</parameters>
+	</failure>
+	<success>
+		<command name="getCompMeta" />
+		<parameters>
+			<name value="C1" />
+		</parameters>
+		<output>
+			<name>C1</name>
+			<vendor>Peter</vendor>
+			<category>electric</category>
+			<constraints>
+				<constraint>n1</constraint>
+				<constraint>n2</constraint>
+				<constraint>n3</constraint>
+			</constraints>
+		</output>
+	</success>	
+	<failure type="CompNotExist">
+		<command name="getCompName"/>
+		<parameters>
+			<name value="F1" />
+		</parameters>
+	</failure>	
+</results>	

@@ -1,0 +1,10 @@
+<command>
+	<login>	
+	  	<username>root</username>
+  		<password>passwdwrong</password>
+	</login>
+	<login>	
+	  	<username>root</username>
+  		<password>passwd</password>
+	</login>
+</command>

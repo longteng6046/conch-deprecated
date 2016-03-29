@@ -1,0 +1,40 @@
+<command>
+	<getVendor>
+		<name>Peter</name>
+  		<note>Sale</note>
+  		<website>google</website>
+	</getVendor>
+	<getVendor>
+		<name>Sam</name>
+  		<note>costumer</note>
+  		<website>google</website>
+	</getVendor>
+	<getCategory>
+		<name>electric</name>
+  		<note>cell phone</note>
+	</getCategory>
+	<getCategory>
+		<name>food</name>
+  		<note>costumer</note>
+	</getCategory>
+	<getCompMeta>
+		<name>C1</name>
+  		<vendor>Peter</vendor>
+  		<category>electric</category>
+  		<constraints>
+  			<cons1>n1</cons1>
+  		 	<cons2>n2</cons2>
+  		 	<cons3>n3</cons3>
+  		</constraints>
+	</getCompMeta>
+	<getCompMeta>
+		<name>F1</name>
+  		<vendor>Sam</vendor>
+  		<category>electric</category>
+  		<constraints>
+  			<cons1>n1</cons1>
+  		 	<cons2>n2</cons2>
+  		 	<cons3>n3</cons3>
+  		</constraints>
+	</getCompMeta>
+</command>	

@@ -1,0 +1,32 @@
+<command>
+	<initRepository>
+    </initRepository>
+	<addVendor>	
+	  	<name>Peter</name>
+  		<note>Sale</note>
+  		<website>google</website>
+	</addVendor>
+	<addVendor>	
+	  	<name>Peter</name>
+  		<note>hello</note>
+  		<website>google</website>
+	</addVendor>
+	<addCategory>
+		<name>electric</name>
+  		<note>cell phone</note>
+	</addCategory>
+	<addCategory>
+		<name>electric</name>
+  		<note>TV</note>
+	</addCategory>
+	<addComp>	
+	  	<name>C1</name>
+  		<vendor>Peter</vendor>
+  		<category>electric</category>
+  		<constraints>
+  			<cons1>n1</cons1>
+  		 	<cons2>n2</cons2>
+  		 	<cons3>n3</cons3>
+  		</constraints>
+	</addComp>
+</command>

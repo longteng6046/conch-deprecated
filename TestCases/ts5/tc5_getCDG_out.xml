@@ -1,0 +1,117 @@
+<results>
+	<success>
+		<command name="initRepository" />
+		<parameters />
+		<output />
+	</success>
+	<success>
+		<command name="addVendor" />
+		<parameters>
+			<name value="Peter" />
+			<note value="Sale" />
+			<web value="google" />
+		</parameters>
+		<output />
+	</success>
+	
+	<failure type="VendorExists">
+		<command name="addVendor"/>
+		<parameters />
+	</failure>
+	<success>
+		<command name ="addCategory" />
+		<parameters>
+			<name value="electric"/>
+  			<note value="cell phone"/>
+		</parameters>
+		<output/>
+	</success>
+	<failure type="CategoryExists">
+		<command name="addCategory" />
+		<parameters />
+	</failure>
+	<success>
+		<command name ="addCategory" />
+		<parameters>
+			<name value="food"/>
+  			<note value="ice"/>
+		</parameters>
+		<output/>
+	</success>
+	<success>
+		<command name="addMeta" />
+		<parameters>
+			<name value="C1" />
+			<vendor value="Peter" />
+			<category value="electric" />
+			<constraints value="n1;;n2;;n3" />
+		</parameters>
+		<output />
+	</success>
+	<success>
+		<command name="addMeta" />
+		<parameters>
+			<name value="Com2" />
+			<vendor value="Peter" />
+			<category value="electric" />
+			<constraints value="m1;;m2;;m3" />
+		</parameters>
+		<output />
+	</success>
+	<success>
+		<command name="addMeta" />
+		<parameters>
+			<name value="Com3" />
+			<vendor value="Peter" />
+			<category value="food" />
+			<constraints value="t1;;t2" />
+		</parameters>
+		<output />
+	</success>
+	<success>
+		<command name="addMeta" />
+		<parameters>
+			<name value="Com4" />
+			<vendor value="Peter" />
+			<category value="food" />
+			<constraints value="t1;;t2" />
+		</parameters>
+		<output />
+	</success>
+	<success>
+		<command name="addDeptInstance" />
+		<parameters>
+			<name value="C1" />
+			<depended value ="Com2" />
+			<depended value ="Com3" />
+			<depended value ="Com4" />
+		</parameters>
+		<output>
+			<cdgLayer>[* Com2 Com3 Com4 ]</cdgLayer>
+		</output>
+	</success>
+	<failure type="TopComponentNotExist">
+		<command name="addDeptInstance" />
+		<parameters>
+			<name value="F1" />
+			<depended value="Com2" />
+			<depended value="Com3" />
+			<depended value="Com4" />
+		</parameters>
+	</failure>
+	<success>
+		<command name="getCDG" />
+		<parameters>
+			<name value="C1" />
+		</parameters>
+		<output>
+			<cdgLayer>[* Com2 Com3 Com4 ]</cdgLayer>
+		</output>
+	</success>
+	<failure type="TopComponentNotExist">
+		<command name="getCDG" />
+		<parameters>
+			<name value="F1" />
+		</parameters>
+	</failure>	
+</results>

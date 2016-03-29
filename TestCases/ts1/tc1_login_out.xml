@@ -1,0 +1,19 @@
+<results>
+	<failure type="FailAuthenticate">
+		<command name="login"/>
+		<parameters>
+			<username value="root" />
+			<password value="passwdwrong" />
+		</parameters>
+	</failure>
+	<success>
+		<command name="login" />
+		<parameters>
+			<username value="root" />
+			<password value="passwd" />
+		</parameters>
+		<output>
+			<sessionId>12</sessionId>
+		</output>
+	</success>
+</results>

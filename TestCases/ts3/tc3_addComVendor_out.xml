@@ -1,0 +1,42 @@
+<results>
+	<success>
+		<command name="initRepository" />
+		<parameters />
+		<output />
+	</success>
+	<success>
+		<command name="addVendor" />
+		<parameters>
+			<name value="Peter" />
+			<note value="Sale" />
+			<web value="google" />
+		</parameters>
+		<output />
+	</success>
+	<failure type="VendorExists">
+		<command name="addVendor"/>
+		<parameters />
+	</failure>
+	<success>
+		<command name ="addCategory" />
+		<parameters>
+			<name value="electric"/>
+  			<note value="cell phone"/>
+		</parameters>
+		<output/>
+	</success>
+	<failure type="CategoryExists">
+		<command name="addCategory" />
+		<parameters />
+	</failure>
+	<success>
+		<command name="addMeta" />
+		<parameters>
+			<name value="C1" />
+			<vendor value="Peter" />
+			<category value="electric" />
+			<constraints value="n1;;n2;;n3" />
+		</parameters>
+		<output />
+	</success>
+</results>
